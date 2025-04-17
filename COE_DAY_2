@@ -43,7 +43,7 @@ else:
      HRA is 85% and DA is 89% on Basic salary'''
 
 basic_salary=int(input("Enter the basic salary:"))
-if basic_salary<=200000:
+if basic_salary<=20000:
     HRA=(basic_salary*76)//100
     DA=(basic_salary*78)//100
 elif basic_salary<=30000:
