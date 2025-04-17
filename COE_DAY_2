@@ -1,0 +1,58 @@
+### TYPE CONVERSIONS ###
+
+a=90.0
+st="100"
+b=30
+print(int(a))
+print(int(st))
+print(float(st))
+print(str(a))
+print(str(b))
+
+       ####  ATM #####
+      # Accept with draw amount and print number of notes
+      # 500,200,100
+amount=int(input("Enter your amount")) #800
+five=0
+two=0
+one=0
+if amount%100==0:
+    if amount>=500:
+        five=amount//500
+        print("500 reupees notes are :",five)
+        amount=amount-(five*500)
+    if amount>=200:
+        two=amount//200
+        print("200 reupees notes are :",two)
+        amount=amount-(two*200)
+    if amount>=100:
+        one=amount//100
+        print("100 reupees notes are :",one)
+else:
+    print("Please enter only multiples of 100")
+
+
+    ####Task 1:
+#Accept Basic salary and find gross salary
+#Gross salary =Basic salary+DA+HRA  HRA=House rent alavence and DA=
+''' if basic salary is less than 20000 then
+     HRA is 76% and DA is 78% on Basic salary
+     if basic salary is between 20000 and 30000 then
+     HRA is 79% and DA is 82% on Basic salary
+     if basic salary is more than 30000 then
+     HRA is 85% and DA is 89% on Basic salary'''
+
+basic_salary=int(input("Enter the basic salary:"))
+if basic_salary<=200000:
+    HRA=(basic_salary*76)//100
+    DA=(basic_salary*78)//100
+elif basic_salary<=30000:
+    HRA=(basic_salary*79)//100
+    DA=(basic_salary*82)//100
+else:
+    HRA=(basic_salary*85)//100
+    DA=(basic_salary*89)//100
+print(f"HRA is {HRA} and DA is {DA}")
+gross_salary=basic_salary+HRA+DA
+print("Gross salary:",gross_salary)
+
