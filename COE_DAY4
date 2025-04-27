@@ -1,0 +1,55 @@
+#PRINT THE NAME,MOBILE_NUMBER,EMAIL,PASSWORD
+name=input("enter the name:")
+mobile_number=input("enter the mobile number:")
+email=input("enter the email:")
+password=input("enter the password: ")
+if name.isalpha():
+    if len(name)>=3 and len(name)<=15:
+        print("the NAME is:",name)
+    else:
+        print("please enter the valid name")
+else:
+    print("text the alphabets")
+
+if len(mobile_number)==10:
+    if mobile_number.isdigit():
+        if mobile_number.startswith('9') or mobile_number.startswith('8') or mobile_number.startswith('7') or mobile_number.startswith('6'):
+            print("the MOBILE NUMBER is:",mobile_number)
+        else:
+            print("please enter the valid mobile_number")
+    else:
+        print("text the digits")
+else:
+    print("enter valid number with 10 digits")
+
+if email[0].isalnum():
+    if len(email)>5:
+        if email.endswith('.com') or email.endswith('.in'):
+            print("the EMAIL ID is:",email)
+        else:
+            print("please enter the valid email id")
+    else:
+        print("enter the valid length")
+else:
+    print("enter the valid email_id")
+    
+countl=0
+countu=0
+countd=0
+counts=0
+if len(password)>8 and len(password)<20:
+    for i in password:
+        if i.islower():
+            countl=countl+1
+        elif i.isupper():
+            countu=countu+1
+        elif i.isdigit():
+            countd=countd+1
+        else:
+            counts=counts+1
+    if countl>=1 and countu>=1 and countd>=1 and counts>=1:
+        print("THE PASSWORD IS :",password)
+    else:
+        print("enter the valid password")
+else:
+    print("enter the valid length")
