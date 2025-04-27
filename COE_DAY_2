@@ -10,8 +10,8 @@ print(str(a))
 print(str(b))
 
        ####  ATM #####
-      # Accept with draw amount and print number of notes
-      # 500,200,100
+# Accept with draw amount and print number of notes
+ # 500,200,100
 amount=int(input("Enter your amount")) #800
 five=0
 two=0
@@ -32,7 +32,7 @@ else:
     print("Please enter only multiples of 100")
 
 
-    ####Task 1:
+      #Task 1:
 #Accept Basic salary and find gross salary
 #Gross salary =Basic salary+DA+HRA  HRA=House rent alavence and DA=
 ''' if basic salary is less than 20000 then
