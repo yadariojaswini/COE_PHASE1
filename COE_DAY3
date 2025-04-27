@@ -1,0 +1,160 @@
+#BY Using While Loop##
+#Print 1-10 numbers
+n=int(input())
+i=0
+while i<=n:
+    i=i+1
+    print(i)
+
+
+#print 10-1 numbers
+n=int(input())
+i=10
+while i>=1:
+    print(i)
+    i=i-1
+
+
+#WAP to accept start and stop value and print between numbers
+s = int(input())
+e = int(input())
+
+if s < e:
+    while s < e - 1:
+        s = s + 1
+        print(s)
+else:
+    while s > e + 1:
+        s = s - 1
+        print(s)
+
+
+#WAP to accept number and print number of factors
+n=int(input())
+count=0
+i=1
+while i<=n:
+    if(n%i==0):
+       count=count+1
+       print("the factors are:",i)
+    i=i+1
+    
+print("the number of factors : ",count)
+
+
+
+
+#WAP to accept number and check it is prime or not
+n=int(input())
+count=0
+i=1
+while i<=n//2:
+    if(n%i==0):
+        count=count+1
+    i=i+1
+if(count==1):
+    print("prime")
+else:
+    print("not a prime")
+
+
+#WAP to accept start and stop value and print prime numbers between them
+s=int(input())
+e=int(input())
+count=0
+i=1
+while s<=e:
+    if(e%s==0):
+        count=count+1
+        print(s)
+    s=s+1
+
+
+#WAP to print reverse of a given number
+s=input()
+r=s[::-1]
+print(r)
+
+
+
+#WAP to print reverse of a given number
+n=int(input())
+rev=0
+while n>0:
+    r=n%10
+    rev=rev*10+r
+    n=n//10
+print("the reverse",rev)
+
+
+
+#WAP to print number of digits of a number given number
+n=int(input())
+count=0
+while n>0:
+    n=n//10
+    count=count+1
+print(count)
+
+
+str="Hi hello 7656 this ^%$^# is Nagul"
+
+'''no.of digits
+no.of alphabets
+no.of vowels
+no.of special characters
+no.of space'''
+count_v=0
+count_d=0
+count_s=0
+count_sp=0
+count_a=0
+str= str.lower()
+for i in str:
+    if (i=='a' or i=='e' or i=='i' or i=='o' or i=='u'):
+        count_v=count_v+1
+    elif(i.isdigit()):
+        count_d=count_d+1
+    elif(i>'a' and i<'z'):
+        count_a=count_a+1
+    elif(i==" "):
+        count_sp=count_sp+1
+    else:
+        count_s=count_s+1
+       
+print(count_v)
+print(count_d)
+print(count_a)
+print(count_sp)
+print(count_s)
+
+
+#print the prime numbers 
+n=1
+while n<=100:
+    num=n
+    i=1
+    count=0
+    while(i<=num//2):
+        if(num%i==0):
+            count=count+1
+        i=i+1
+    if count==1:
+        print(num)
+    n=n+1
+
+
+#print the number of digits
+num=5632
+count=0
+for i in range(0,num+1):
+    if(num!=0):
+        num=num//10
+        count=count+1
+print(count)
+
+
+
+
+
+
